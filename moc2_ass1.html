@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment Solution for Module 2</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+		
+h1{
+	text-align: center;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  div #p1 {
+    background-color: grey;
+    border: 1px solid black;
+    padding: 10px;
+  }
+ div #p2 {
+  	background-color: red;
+  	border: 1px solid black;
+  	padding: 5px 10px ;
+  	position: relative;
+  	top: 0px;
+  	right: 0px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    /*float: right;*/
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width:991px) {
+div #p1 {
+    /*width: 50%;*/
+    float: left;
+    border: 1px solid black;
+    background-color: grey;
+    padding: 10px;
+  }
+ div #p2 {
+  	background-color: red;
+  	border: 1px solid black;
+  	padding: 5px 10px ;
+  	position: absolute;
+  	right: 40px;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    /*float: right;*/
+  }
+}
+/******Small devices only**********/
+@media (max-width: 767px){
+div	#p1{
+	background-color: grey;
+	padding: 10px;
+	border: 1px solid black;
+
+	}
+ div #p2 {
+  	background-color: red;
+  	border: 1px solid black;
+  	padding: 5px 10px ;
+  	position: absolute;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    /*float: right;*/
+  }
+}
+
+	</style>
+</head>
+<body>
+	<h1>Our Menu</h1>
+	
+	<div class="container">
+		<div class="row">
+		<p id="p2" >Chicken</p>
+		<p id="p1" class="col-md-6">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore
+		et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labrois nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<div class="row">
+		<p id="p2">Beef</p>
+		<p id="p1" class="col-md-6">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore
+		et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labrois nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	<div class="row">
+		<p id="p2">Sushi</p>
+		<p id="p1" class="col-md-6">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do elusmod tempor incididunt ut labore
+		et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco labrois nisi ut aliquip ex ea commodo consequat.</p>
+	</div>
+	</div>
+	<script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
